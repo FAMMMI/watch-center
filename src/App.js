@@ -9,6 +9,7 @@ import Blogs from './components/Blogs/Blogs';
 import NotFound from './components/NotFound/NotFound';
 import Reviews from './components/Reviews/Reviews';
 
+
 function App() {
   return (
     <div className="App">
