@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Akash Chowdhury",
+        "note": "Products was in good condition",
+        "ratings": 4.5
+    },
+    {
+        "id": 2,
+        "name": "Nagib Saleheen",
+        "note": "Delivery in time",
+        "ratings": 4
+    },
+    {
+        "id": 3,
+        "name": "Nafees Sadekeen",
+        "note": "Totally satisfied",
+        "ratings": 5
+    },
+    {
+        "id": 4,
+        "name": "Julian Brandt",
+        "note": "Prices are reasonable",
+        "ratings": 5
+    },
+    {
+        "id": 5,
+        "name": "Thomas Muller",
+        "note": "Overall good service",
+        "ratings": 4.5
+    },
+    {
+        "id": 6,
+        "name": "Luka Modric",
+        "note": "Recommended",
+        "ratings": 5
+    }
+]
