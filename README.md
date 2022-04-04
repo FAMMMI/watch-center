@@ -4,7 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-- hello
+- Here in home page you can see the intro of the website with few reviews and a header with navbar 
+- Then in reviews page , you will see  people's review about our services .
+- Then in Dashboard ,you will see different charts about our investment , earning per month observation .
+- In the blogs page there are some Q & A .  
 
 In the project directory, you can run:
 
