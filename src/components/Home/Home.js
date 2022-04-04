@@ -32,7 +32,7 @@ const Home = () => {
 
             <div>
 
-                <p className='items-center py-14 text-3xl font-bold'><hr /><br /> Customer Review </p>
+                <p className='items-center py-14 text-3xl font-bold'><br /> Customer Review </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                 {
