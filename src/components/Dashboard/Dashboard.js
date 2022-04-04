@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, Bar, BarChart, Line, LineChart, Pie, PieChart, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const [data, setData] = useState([]);
@@ -18,6 +18,9 @@ const Dashboard = () => {
                 <LineChart width={300} height={250} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <Tooltip />
+                    <Legend verticalAlign="top" height={36} />
                     <Line dataKey="sell">
 
                     </Line>
@@ -29,6 +32,9 @@ const Dashboard = () => {
                 <BarChart width={300} height={250} data={data}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <Tooltip />
+                    <Legend verticalAlign="top" height={36} />
                     <Bar dataKey={"investment"} fill="#8884d8"></Bar>
                     <Bar dataKey={"revenue"} fill="#82ca9d"></Bar>
                 </BarChart>
@@ -49,6 +55,9 @@ const Dashboard = () => {
                     </defs>
                     <XAxis dataKey="month" />
                     <YAxis />
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <Tooltip />
+                    <Legend verticalAlign="top" height={36} />
                     <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
                     <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
                 </AreaChart>
@@ -56,6 +65,9 @@ const Dashboard = () => {
             </div>
             <div className='pl-8'>
                 <PieChart width={250} height={250}>
+
+                    <Tooltip />
+
                     <Pie data={data} dataKey="investment" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                 </PieChart>
