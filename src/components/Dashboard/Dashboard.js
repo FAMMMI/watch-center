@@ -15,7 +15,7 @@ const Dashboard = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 pb-10 '>
             <div className='mx-auto'>
-                <LineChart width={300} height={250} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                <LineChart width={400} height={300} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -29,7 +29,7 @@ const Dashboard = () => {
                 <p className='text-blue-600'>Line Chart between sell per month</p>
             </div>
             <div className='mx-auto'>
-                <BarChart width={300} height={250} data={data}>
+                <BarChart width={400} height={300} data={data}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
                     <Bar dataKey={"investment"} fill="#8884d8"></Bar>
@@ -41,7 +41,7 @@ const Dashboard = () => {
                 <p className='text-blue-600'>Bar Chart of Investment vs Revenue</p>
             </div>
             <div className='mx-auto'>
-                <AreaChart width={300} height={200} data={data}
+                <AreaChart width={400} height={300} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -64,7 +64,7 @@ const Dashboard = () => {
                 <p className='text-blue-600'>Area chart of Investment vs Revenue</p>
             </div>
             <div className='mx-auto'>
-                <PieChart width={300} height={200}>
+                <PieChart width={400} height={300}>
 
                     <Tooltip />
 
