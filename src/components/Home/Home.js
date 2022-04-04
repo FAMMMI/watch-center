@@ -5,6 +5,15 @@ import Review from '../Review/Review';
 const Home = () => {
 
     const [reviews, setReviews] = useReviews();
+    const [allReviews, setAllReviews] = useState([]);
+
+    const handleShowAll = () => {
+
+
+
+        // const allReviews = reviews.map(review => <)
+
+    }
 
     return (
         <div className='px-4 pt-10 pb-10 mx-auto max-w-7xl md:px-2'>
@@ -33,7 +42,7 @@ const Home = () => {
                 }
             </div>
             <div className='mt-6 '>
-                <button className='rounded-md bg-slate-400 p-2'>See All Reviews</button>
+                <button onClick={handleShowAll} className='rounded-md bg-slate-200 border-slate-400 border-2 text-sm p-2'>See All Reviews</button>
             </div>
         </div>
     );

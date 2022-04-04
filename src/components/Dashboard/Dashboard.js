@@ -13,7 +13,7 @@ const Dashboard = () => {
     }, [])
         ;
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 pb-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 '>
             <div>
                 <LineChart width={300} height={250} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <XAxis dataKey={'month'}></XAxis>
@@ -34,7 +34,7 @@ const Dashboard = () => {
                 </BarChart>
                 <p className='text-blue-600'>Bar Chart of Investment vs Revenue</p>
             </div>
-            <div>
+            <div className='pl-8'>
                 <AreaChart width={300} height={250} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
@@ -54,8 +54,8 @@ const Dashboard = () => {
                 </AreaChart>
                 <p className='text-blue-600'>Area chart of Investment vs Revenue</p>
             </div>
-            <div>
-                <PieChart width={300} height={250}>
+            <div className='pl-8'>
+                <PieChart width={250} height={250}>
                     <Pie data={data} dataKey="investment" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                 </PieChart>
