@@ -1,8 +1,8 @@
-# Watch Center
+# [Watch Center](https://watch-center-by-fami.netlify.app/)
 
 Website Link : [https://watch-center-by-fami.netlify.app/](https://watch-center-by-fami.netlify.app/).
 
-## Available Scripts
+## About Watch Center 
 
 - Here in home page you can see the intro of the website with few reviews and a header with navbar 
 - Then in reviews page , you will see  people's review about our services .
