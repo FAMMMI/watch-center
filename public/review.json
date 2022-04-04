@@ -2,36 +2,42 @@
     {
         "id": 1,
         "name": "Akash Chowdhury",
+        "img": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
         "note": "Products was in good condition",
         "ratings": 4.5
     },
     {
         "id": 2,
         "name": "Nagib Saleheen",
+        "img": "https://images.ctfassets.net/hrltx12pl8hq/31f9j3A3xKasyUMMsuIQO8/6a8708add4cb4505b65b1cee3f2e6996/9db2e04eb42b427f4968ab41009443b906e4eabf-people_men-min.jpg?fit=fill&w=368&h=207",
         "note": "Delivery in time",
         "ratings": 4
     },
     {
         "id": 3,
         "name": "Nafees Sadekeen",
+        "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&w=1000&q=80",
         "note": "Totally satisfied",
         "ratings": 5
     },
     {
         "id": 4,
         "name": "Julian Brandt",
+        "img": "https://media.istockphoto.com/photos/happy-smiling-man-looking-away-picture-id1158245623?k=20&m=1158245623&s=612x612&w=0&h=rGmn02kNdoQySPEoQmbbDBxOayL4sdW3QWqP9rjgxCg=",
         "note": "Prices are reasonable",
         "ratings": 5
     },
     {
         "id": 5,
         "name": "Thomas Muller",
+        "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXQlMjBtYW58ZW58MHx8MHx8&w=1000&q=80",
         "note": "Overall good service",
         "ratings": 4.5
     },
     {
         "id": 6,
         "name": "Luka Modric",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluRL1KNTpEIEOb0dMgsYEe71kA_AccSmQcg&usqp=CAU",
         "note": "Recommended",
         "ratings": 5
     }

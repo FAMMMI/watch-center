@@ -13,8 +13,8 @@ const Dashboard = () => {
     }, [])
         ;
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 pb-10 '>
-            <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 pb-10 '>
+            <div className='mx-auto'>
                 <LineChart width={300} height={250} data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
@@ -28,20 +28,20 @@ const Dashboard = () => {
 
                 <p className='text-blue-600'>Line Chart between sell per month</p>
             </div>
-            <div>
+            <div className='mx-auto'>
                 <BarChart width={300} height={250} data={data}>
                     <XAxis dataKey={'month'}></XAxis>
                     <YAxis></YAxis>
+                    <Bar dataKey={"investment"} fill="#8884d8"></Bar>
+                    <Bar dataKey={"revenue"} fill="#82ca9d"></Bar>
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
                     <Legend verticalAlign="top" height={36} />
-                    <Bar dataKey={"investment"} fill="#8884d8"></Bar>
-                    <Bar dataKey={"revenue"} fill="#82ca9d"></Bar>
                 </BarChart>
                 <p className='text-blue-600'>Bar Chart of Investment vs Revenue</p>
             </div>
-            <div className='pl-8'>
-                <AreaChart width={300} height={250} data={data}
+            <div className='mx-auto'>
+                <AreaChart width={300} height={200} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -63,8 +63,8 @@ const Dashboard = () => {
                 </AreaChart>
                 <p className='text-blue-600'>Area chart of Investment vs Revenue</p>
             </div>
-            <div className='pl-8'>
-                <PieChart width={250} height={250}>
+            <div className='mx-auto'>
+                <PieChart width={300} height={200}>
 
                     <Tooltip />
 
